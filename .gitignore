@@ -2,5 +2,4 @@ __pycache__/
 *.pyc
 .DS_Store
 Thumbs.db
-.gitignore
-kunci-jawaban
+kunci-jawaban/
