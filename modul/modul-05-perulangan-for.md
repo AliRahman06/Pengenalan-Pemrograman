@@ -215,6 +215,62 @@ Gunakan fitur ini secukupnya; jika membingungkan, gunakan variabel penanda seper
 - Uji dengan data kecil, misalnya `n = 3`, sebelum data besar.
 - Gunakan nama variabel yang jelas: `total`, `jumlah`, `baris`, `kolom`.
 
+### 10. Contoh Implementasi
+
+Beberapa contoh penerapan materi modul ini dalam kasus kecil.
+
+**1. Menjumlahkan angka 1 sampai n**
+
+```python
+n = int(input("Masukkan n: "))
+total = 0
+
+for angka in range(1, n + 1):
+    total += angka
+
+print(f"Jumlah 1 sampai {n}: {total}")
+```
+
+Contoh interaksi:
+
+```text
+Masukkan n: 5
+Jumlah 1 sampai 5: 15
+```
+
+**2. Tabel penjumlahan dengan perulangan bersarang**
+
+```python
+for baris in range(1, 4):
+    for kolom in range(1, 4):
+        print(f"{baris + kolom:3}", end="")
+    print()
+```
+
+Output:
+
+```text
+  2  3  4
+  3  4  5
+  4  5  6
+```
+
+**3. Melewati angka genap dengan `continue`**
+
+```python
+for angka in range(1, 11):
+    if angka % 2 == 0:
+        continue
+    print(angka, end=" ")
+print()
+```
+
+Output:
+
+```text
+1 3 5 7 9 
+```
+
 ---
 
 ## Tugas Praktikum

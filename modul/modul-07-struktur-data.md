@@ -332,6 +332,79 @@ Output:
 - Gunakan nama variabel jamak untuk kumpulan data: `nilai`, `mahasiswa`, `barang`.
 - Tampilkan isi struktur data saat pengembangan untuk memastikan bentuknya benar, misalnya `print(data)`.
 
+### 10. Contoh Implementasi
+
+Beberapa contoh penerapan materi modul ini dalam kasus kecil.
+
+**1. Statistik nilai dengan `list`**
+
+```python
+nilai = []
+
+for i in range(3):
+    nilai.append(float(input(f"Nilai ke-{i + 1}: ")))
+
+print(f"Daftar nilai: {nilai}")
+print(f"Total: {sum(nilai)}")
+print(f"Rata-rata: {sum(nilai) / len(nilai):.2f}")
+print(f"Tertinggi: {max(nilai)}")
+print(f"Terendah: {min(nilai)}")
+```
+
+Contoh interaksi:
+
+```text
+Nilai ke-1: 80
+Nilai ke-2: 90
+Nilai ke-3: 75
+Daftar nilai: [80.0, 90.0, 75.0]
+Total: 245.0
+Rata-rata: 81.67
+Tertinggi: 90.0
+Terendah: 75.0
+```
+
+**2. Data mahasiswa dengan `dict`**
+
+```python
+mahasiswa = {"nama": "Ayu", "nim": "2401001", "nilai": 88}
+
+print(mahasiswa["nama"])
+print(mahasiswa.get("alamat", "Tidak ada data"))
+
+for kunci, nilai in mahasiswa.items():
+    print(f"{kunci}: {nilai}")
+```
+
+Output:
+
+```text
+Ayu
+Tidak ada data
+nama: Ayu
+nim: 2401001
+nilai: 88
+```
+
+**3. Operasi himpunan dengan `set`**
+
+```python
+kelas_a = {"Ayu", "Budi", "Citra"}
+kelas_b = {"Citra", "Dina", "Eka"}
+
+print(f"Semua peserta: {kelas_a | kelas_b}")
+print(f"Kedua kelas: {kelas_a & kelas_b}")
+print(f"Hanya kelas A: {kelas_a - kelas_b}")
+```
+
+Contoh output (urutan bisa berbeda):
+
+```text
+Semua peserta: {'Eka', 'Dina', 'Ayu', 'Citra', 'Budi'}
+Kedua kelas: {'Citra'}
+Hanya kelas A: {'Ayu', 'Budi'}
+```
+
 ---
 
 ## Tugas Praktikum

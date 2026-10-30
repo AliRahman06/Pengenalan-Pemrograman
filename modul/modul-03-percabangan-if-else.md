@@ -184,6 +184,73 @@ Jika indentasi tidak konsisten, muncul `IndentationError`. Pilih 4 spasi dan gun
 - Uji batas nilai, misalnya `74`, `75`, dan `76`.
 - Hindari percabangan terlalu dalam; pertimbangkan `elif` atau fungsi.
 
+### 10. Contoh Implementasi
+
+Beberapa contoh penerapan materi modul ini dalam kasus kecil.
+
+**1. Kategori suhu**
+
+```python
+suhu = float(input("Suhu udara (°C): "))
+
+if suhu < 0:
+    print("Dingin sekali")
+elif suhu < 20:
+    print("Sejuk")
+elif suhu < 30:
+    print("Hangat")
+else:
+    print("Panas")
+```
+
+Contoh interaksi:
+
+```text
+Suhu udara (°C): 25
+Hangat
+```
+
+**2. Pemeriksaan SIM dengan percabangan bersarang**
+
+```python
+umur = int(input("Umur: "))
+punya_sim = input("Punya SIM? (ya/tidak): ")
+
+if umur >= 17:
+    if punya_sim == "ya" or punya_sim == "Ya":
+        print("Boleh mengendarai mobil.")
+    else:
+        print("Cukup umur, tetapi belum memiliki SIM.")
+else:
+    print("Belum cukup umur.")
+```
+
+Contoh interaksi:
+
+```text
+Umur: 20
+Punya SIM? (ya/tidak): ya
+Boleh mengendarai mobil.
+```
+
+**3. Validasi nilai dengan `or`**
+
+```python
+nilai = int(input("Nilai: "))
+
+if nilai < 0 or nilai > 100:
+    print("Nilai tidak valid")
+else:
+    print("Nilai valid")
+```
+
+Contoh interaksi:
+
+```text
+Nilai: 120
+Nilai tidak valid
+```
+
 ---
 
 ## Tugas Praktikum

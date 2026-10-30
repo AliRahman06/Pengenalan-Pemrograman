@@ -375,6 +375,65 @@ Penjelasan:
 - Uji ekspresi kecil di mode interaktif sebelum memasukkannya ke program besar.
 - Jika muncul error, periksa tipe data dan nama variabel terlebih dahulu.
 
+### 16. Contoh Implementasi
+
+Beberapa contoh penerapan materi modul ini dalam kasus kecil.
+
+**1. Total belanja**
+
+```python
+nama_barang = input("Nama barang: ")
+harga = float(input("Harga satuan: "))
+jumlah = int(input("Jumlah beli: "))
+
+subtotal = harga * jumlah
+print(f"{nama_barang} x {jumlah} = Rp{subtotal:,.0f}")
+```
+
+Contoh interaksi:
+
+```text
+Nama barang: Buku
+Harga satuan: 45000
+Jumlah beli: 3
+Buku x 3 = Rp135,000
+```
+
+**2. Konversi detik ke jam, menit, dan detik**
+
+```python
+total_detik = int(input("Total detik: "))
+
+jam = total_detik // 3600
+menit = (total_detik % 3600) // 60
+detik = total_detik % 60
+
+print(f"{total_detik} detik = {jam} jam {menit} menit {detik} detik")
+```
+
+Contoh interaksi:
+
+```text
+Total detik: 3675
+3675 detik = 1 jam 1 menit 15 detik
+```
+
+**3. Konversi suhu Celsius ke Fahrenheit**
+
+```python
+celsius = float(input("Suhu Celsius: "))
+fahrenheit = celsius * 9 / 5 + 32
+
+print(f"{celsius:.1f}°C = {fahrenheit:.1f}°F")
+```
+
+Contoh interaksi:
+
+```text
+Suhu Celsius: 30
+30.0°C = 86.0°F
+```
+
 ---
 
 ## Tugas Praktikum

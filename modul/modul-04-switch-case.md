@@ -205,6 +205,77 @@ Sangat baik
 - Untuk rentang angka, gunakan guard atau `if-elif`.
 - Uji setiap pilihan, termasuk pilihan yang tidak ada.
 
+### 11. Contoh Implementasi
+
+Beberapa contoh penerapan materi modul ini dalam kasus kecil.
+
+**1. Menu sederhana dengan wildcard**
+
+```python
+pilihan = input("Pilihan (1/2/3): ")
+
+match pilihan:
+    case "1":
+        print("Menampilkan profil")
+    case "2":
+        print("Mengubah password")
+    case "3":
+        print("Keluar")
+    case _:
+        print("Pilihan tidak tersedia")
+```
+
+Contoh interaksi:
+
+```text
+Pilihan (1/2/3): 2
+Mengubah password
+```
+
+**2. Huruf vokal dengan OR pattern**
+
+```python
+huruf = input("Masukkan huruf: ").lower()
+
+match huruf:
+    case "a" | "i" | "u" | "e" | "o":
+        print("Huruf vokal")
+    case _:
+        print("Bukan huruf vokal")
+```
+
+Contoh interaksi:
+
+```text
+Masukkan huruf: A
+Huruf vokal
+```
+
+**3. Kategori umur dengan guard**
+
+```python
+umur = int(input("Umur: "))
+
+match umur:
+    case u if u < 0:
+        print("Tidak valid")
+    case u if u < 13:
+        print("Anak")
+    case u if u < 18:
+        print("Remaja")
+    case u if u < 60:
+        print("Dewasa")
+    case _:
+        print("Lansia")
+```
+
+Contoh interaksi:
+
+```text
+Umur: 15
+Remaja
+```
+
 ---
 
 ## Tugas Praktikum

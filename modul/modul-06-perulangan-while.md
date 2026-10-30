@@ -270,6 +270,76 @@ Pastikan setiap loop memiliki cara untuk berhenti.
 - Uji dengan kasus batas: nilai terkecil, nilai terbesar, dan input salah.
 - Jika jumlah putaran pasti, `for` biasanya lebih sederhana.
 
+### 12. Contoh Implementasi
+
+Beberapa contoh penerapan materi modul ini dalam kasus kecil.
+
+**1. Hitung mundur**
+
+```python
+n = int(input("Mulai dari: "))
+
+while n > 0:
+    print(n)
+    n -= 1
+
+print("Selesai!")
+```
+
+Contoh interaksi:
+
+```text
+Mulai dari: 3
+3
+2
+1
+Selesai!
+```
+
+**2. Menjumlahkan angka sampai sentinel `0`**
+
+```python
+total = 0
+angka = int(input("Angka (0 untuk selesai): "))
+
+while angka != 0:
+    total += angka
+    angka = int(input("Angka (0 untuk selesai): "))
+
+print(f"Total: {total}")
+```
+
+Contoh interaksi:
+
+```text
+Angka (0 untuk selesai): 10
+Angka (0 untuk selesai): 20
+Angka (0 untuk selesai): 5
+Angka (0 untuk selesai): 0
+Total: 35
+```
+
+**3. Validasi input berulang**
+
+```python
+nilai = int(input("Nilai 0-100: "))
+
+while nilai < 0 or nilai > 100:
+    print("Nilai tidak valid.")
+    nilai = int(input("Nilai 0-100: "))
+
+print(f"Nilai disimpan: {nilai}")
+```
+
+Contoh interaksi:
+
+```text
+Nilai 0-100: 120
+Nilai tidak valid.
+Nilai 0-100: 80
+Nilai disimpan: 80
+```
+
 ---
 
 ## Tugas Praktikum

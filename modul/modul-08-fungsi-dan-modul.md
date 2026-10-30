@@ -369,6 +369,61 @@ Jika pengguna mengetik `dua`, blok `except` dijalankan dan program tidak berhent
 - Gunakan `return` untuk hasil yang akan dipakai lagi.
 - Hindari fungsi yang terlalu panjang; pecah menjadi fungsi kecil.
 
+### 14. Contoh Implementasi
+
+Beberapa contoh penerapan materi modul ini dalam kasus kecil.
+
+**1. Fungsi dengan `return`**
+
+```python
+def luas_persegi(sisi):
+    return sisi * sisi
+
+luas = luas_persegi(5)
+print(f"Luas persegi: {luas}")
+```
+
+Output:
+
+```text
+Luas persegi: 25
+```
+
+**2. Parameter default dan argumen kata kunci**
+
+```python
+def sapa(nama, salam="Halo"):
+    print(f"{salam}, {nama}!")
+
+sapa("Ayu")
+sapa("Budi", "Selamat pagi")
+```
+
+Output:
+
+```text
+Halo, Ayu!
+Selamat pagi, Budi!
+```
+
+**3. Modul `math` dan blok `__main__`**
+
+```python
+import math
+
+def luas_lingkaran(r):
+    return math.pi * r * r
+
+if __name__ == "__main__":
+    print(f"Luas lingkaran: {luas_lingkaran(7):.2f}")
+```
+
+Output:
+
+```text
+Luas lingkaran: 153.94
+```
+
 ---
 
 ## Tugas Praktikum
