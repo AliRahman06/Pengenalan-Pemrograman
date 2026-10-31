@@ -10,7 +10,7 @@ Setelah menyelesaikan modul ini, mahasiswa mampu:
 4. Menggunakan komentar pada kode program.
 
 **Prasyarat:** tidak ada.  
-**Estimasi waktu:** 2 jam (60 menit teori dan praktik terbimbing, 60 menit tugas).
+**Estimasi waktu:** 1.5 jam (90 menit teori dan praktik terbimbing).
 
 ---
 
@@ -28,30 +28,30 @@ Setelah menyelesaikan modul ini, mahasiswa mampu:
 
 - Memiliki input dan output yang jelas.
 - Setiap langkah harus jelas dan tidak menimbulkan makna ganda (tidak ambigu).
-- Memiliki batas akhir atau berhenti (*finite*), tidak berjalan tanpa henti.
+- Memiliki batas akhir atau berhenti (_finite_), tidak berjalan tanpa henti.
 - Efektif dan efisien dalam menyelesaikan masalah.
 
 ### 3. Mengenal Bahasa Pemrograman Python
 
-Python adalah bahasa pemrograman tingkat tinggi (*high-level language*) yang bersifat *interpreted*, dinamis, dan mudah dipelajari. Python pertama kali dikembangkan oleh Guido van Rossum dan dirilis pada tahun 1991.
+Python adalah bahasa pemrograman tingkat tinggi (_high-level language_) yang bersifat _interpreted_, dinamis, dan mudah dipelajari. Python pertama kali dikembangkan oleh Guido van Rossum dan dirilis pada tahun 1991.
 
 Beberapa alasan Python dipilih sebagai bahasa pengantar pemrograman bagi pemula:
 
 - Sintaksnya sederhana dan mudah dibaca, mendekati bahasa manusia (bahasa Inggris).
-- Bersifat *interpreted*, sehingga kode dapat langsung dijalankan tanpa proses kompilasi terpisah.
+- Bersifat _interpreted_, sehingga kode dapat langsung dijalankan tanpa proses kompilasi terpisah.
 - Memiliki komunitas besar dan dokumentasi yang lengkap.
-- Digunakan secara luas di berbagai bidang: pengembangan web, *data science*, kecerdasan buatan, otomasi, dan lain-lain.
+- Digunakan secara luas di berbagai bidang: pengembangan web, _data science_, kecerdasan buatan, otomasi, dan lain-lain.
 
 ### 4. Interpreter vs Compiler
 
 Secara umum, bahasa pemrograman dijalankan melalui dua pendekatan:
 
-| Aspek | Compiler | Interpreter |
-|---|---|---|
-| Proses eksekusi | Seluruh kode diterjemahkan sekaligus menjadi kode mesin sebelum dijalankan | Kode diterjemahkan dan dijalankan baris per baris |
-| Contoh bahasa | C, C++, Pascal | Python, JavaScript |
-| Deteksi error | Error terdeteksi setelah seluruh kode dikompilasi | Error terdeteksi langsung saat baris tersebut dijalankan |
-| Kecepatan eksekusi | Umumnya lebih cepat | Umumnya lebih lambat, tetapi lebih mudah diuji |
+| Aspek              | Compiler                                                                   | Interpreter                                              |
+| ------------------ | -------------------------------------------------------------------------- | -------------------------------------------------------- |
+| Proses eksekusi    | Seluruh kode diterjemahkan sekaligus menjadi kode mesin sebelum dijalankan | Kode diterjemahkan dan dijalankan baris per baris        |
+| Contoh bahasa      | C, C++, Pascal                                                             | Python, JavaScript                                       |
+| Deteksi error      | Error terdeteksi setelah seluruh kode dikompilasi                          | Error terdeteksi langsung saat baris tersebut dijalankan |
+| Kecepatan eksekusi | Umumnya lebih cepat                                                        | Umumnya lebih lambat, tetapi lebih mudah diuji           |
 
 ### 5. Instalasi Python
 
@@ -74,7 +74,7 @@ Jika instalasi berhasil, perintah tersebut akan menampilkan versi Python yang te
 
 ### 6. Instalasi dan Pengenalan IDE (Visual Studio Code)
 
-IDE (*Integrated Development Environment*) adalah aplikasi yang digunakan untuk menulis, menjalankan, dan men-debug kode program. Pada praktikum ini digunakan Visual Studio Code (VS Code) karena ringan, gratis, dan mendukung banyak bahasa pemrograman.
+IDE (_Integrated Development Environment_) adalah aplikasi yang digunakan untuk menulis, menjalankan, dan men-debug kode program. Pada praktikum ini digunakan Visual Studio Code (VS Code) karena ringan, gratis, dan mendukung banyak bahasa pemrograman.
 
 1. Unduh VS Code melalui <https://code.visualstudio.com/>.
 2. Jalankan installer dan ikuti proses instalasi hingga selesai.
@@ -99,7 +99,7 @@ yang terdiri atas beberapa baris
 
 Beberapa hal penting mengenai sintaks dasar Python:
 
-- Python bersifat *case-sensitive* (membedakan huruf besar dan kecil).
+- Python bersifat _case-sensitive_ (membedakan huruf besar dan kecil).
 - Komentar satu baris ditulis menggunakan tanda pagar (`#`).
 - Komentar banyak baris dapat ditulis menggunakan tiga tanda kutip (`""" ... """`).
 - Python tidak memerlukan tanda titik koma (`;`) di akhir baris perintah.
@@ -107,12 +107,12 @@ Beberapa hal penting mengenai sintaks dasar Python:
 
 ### 8. Kesalahan Umum
 
-| Kesalahan | Penyebab | Contoh | Perbaikan |
-|---|---|---|---|
-| `NameError` | Nama perintah salah eja atau huruf besar/kecil tidak sesuai | `Print("Halo")` | Gunakan `print("Halo")` |
-| `SyntaxError` | Tanda kutip atau kurung tidak lengkap | `print("Halo` | Lengkapi menjadi `print("Halo")` |
-| `IndentationError` | Indentasi tidak konsisten | Spasi di awal baris yang tidak diperlukan | Hapus atau samakan indentasi |
-| File tidak berjalan | Ekstensi file bukan `.py` | `hello.txt` | Simpan sebagai `hello.py` |
+| Kesalahan           | Penyebab                                                    | Contoh                                    | Perbaikan                        |
+| ------------------- | ----------------------------------------------------------- | ----------------------------------------- | -------------------------------- |
+| `NameError`         | Nama perintah salah eja atau huruf besar/kecil tidak sesuai | `Print("Halo")`                           | Gunakan `print("Halo")`          |
+| `SyntaxError`       | Tanda kutip atau kurung tidak lengkap                       | `print("Halo`                             | Lengkapi menjadi `print("Halo")` |
+| `IndentationError`  | Indentasi tidak konsisten                                   | Spasi di awal baris yang tidak diperlukan | Hapus atau samakan indentasi     |
+| File tidak berjalan | Ekstensi file bukan `.py`                                   | `hello.txt`                               | Simpan sebagai `hello.py`        |
 
 ### 9. Tips Praktikum
 
@@ -258,15 +258,15 @@ Hobi                 : Membaca
 
 ## Istilah Penting
 
-| Istilah | Arti |
-|---|---|
-| Pemrograman | Proses menulis instruksi untuk dijalankan komputer |
-| Algoritma | Urutan langkah logis dan sistematis untuk menyelesaikan masalah |
+| Istilah     | Arti                                                            |
+| ----------- | --------------------------------------------------------------- |
+| Pemrograman | Proses menulis instruksi untuk dijalankan komputer              |
+| Algoritma   | Urutan langkah logis dan sistematis untuk menyelesaikan masalah |
 | Interpreter | Program yang menerjemahkan dan menjalankan kode baris per baris |
-| Compiler | Program yang menerjemahkan seluruh kode sebelum dijalankan |
-| IDE | Aplikasi untuk menulis, menjalankan, dan men-debug kode |
-| Script | File berisi kode Python, biasanya berakhiran `.py` |
-| Komentar | Catatan pada kode yang tidak dijalankan oleh Python |
+| Compiler    | Program yang menerjemahkan seluruh kode sebelum dijalankan      |
+| IDE         | Aplikasi untuk menulis, menjalankan, dan men-debug kode         |
+| Script      | File berisi kode Python, biasanya berakhiran `.py`              |
+| Komentar    | Catatan pada kode yang tidak dijalankan oleh Python             |
 
 ## Checklist Sebelum Lanjut
 

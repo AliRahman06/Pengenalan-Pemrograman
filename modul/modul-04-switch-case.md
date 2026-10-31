@@ -11,7 +11,7 @@ Setelah menyelesaikan modul ini, mahasiswa mampu:
 5. Memilih antara `match-case` dan `if-elif` sesuai kebutuhan.
 
 **Prasyarat:** Modul 1–3, Python 3.10 atau lebih baru.  
-**Estimasi waktu:** 2 jam.
+**Estimasi waktu:** 1.5 jam (90 menit teori dan praktik terbimbing).
 
 > Banyak bahasa lain memiliki `switch-case`. Python tidak memakai kata kunci `switch`, tetapi menyediakan `match-case` dengan tujuan yang sama: memilih satu blok berdasarkan nilai tertentu.
 
@@ -188,14 +188,14 @@ Sangat baik
 
 ### 9. Kesalahan Umum
 
-| Kesalahan | Contoh | Akibat | Perbaikan |
-|---|---|---|---|
-| Lupa titik dua | `case 1` | `SyntaxError` | `case 1:` |
-| Lupa wildcard | Tidak ada `case _` | Nilai tak dikenal tidak ditangani | Tambahkan `case _:` |
-| Salah indentasi | `case` tidak sejajar `match` | `IndentationError` | Samakan indentasi `case` |
-| Tipe data berbeda | input `"1"` dicocokkan dengan `case 1` | Tidak cocok | Ubah dengan `int()` |
-| Guard salah urutan | Rentang besar diperiksa dulu | Hasil keliru | Periksa kondisi paling spesifik dulu |
-| Mengira perlu `break` | Menulis `break` di case | `SyntaxError` | Hapus `break` |
+| Kesalahan             | Contoh                                 | Akibat                            | Perbaikan                            |
+| --------------------- | -------------------------------------- | --------------------------------- | ------------------------------------ |
+| Lupa titik dua        | `case 1`                               | `SyntaxError`                     | `case 1:`                            |
+| Lupa wildcard         | Tidak ada `case _`                     | Nilai tak dikenal tidak ditangani | Tambahkan `case _:`                  |
+| Salah indentasi       | `case` tidak sejajar `match`           | `IndentationError`                | Samakan indentasi `case`             |
+| Tipe data berbeda     | input `"1"` dicocokkan dengan `case 1` | Tidak cocok                       | Ubah dengan `int()`                  |
+| Guard salah urutan    | Rentang besar diperiksa dulu           | Hasil keliru                      | Periksa kondisi paling spesifik dulu |
+| Mengira perlu `break` | Menulis `break` di case                | `SyntaxError`                     | Hapus `break`                        |
 
 ### 10. Tips
 
@@ -382,13 +382,13 @@ Hasil: 2.50
 
 Minta umur, lalu tampilkan kategori:
 
-| Rentang umur | Kategori |
-|---|---|
-| < 0 | Tidak valid |
-| 0–12 | Anak |
-| 13–17 | Remaja |
-| 18–59 | Dewasa |
-| ≥ 60 | Lansia |
+| Rentang umur | Kategori    |
+| ------------ | ----------- |
+| < 0          | Tidak valid |
+| 0–12         | Anak        |
+| 13–17        | Remaja      |
+| 18–59        | Dewasa      |
+| ≥ 60         | Lansia      |
 
 Contoh interaksi:
 
@@ -452,13 +452,13 @@ Nominal harus kelipatan Rp50,000.
 
 ## Istilah Penting
 
-| Istilah | Arti |
-|---|---|
-| `match` | Nilai yang akan diperiksa |
-| `case` | Kemungkinan pola yang dicocokkan |
-| Wildcard | Pola `_` yang cocok dengan nilai apa pun |
-| OR pattern | Beberapa pola digabung dengan `|` |
-| Guard | Kondisi `if` tambahan pada case |
+| Istilah     | Arti                                                          |
+| ----------- | ------------------------------------------------------------- | --- |
+| `match`     | Nilai yang akan diperiksa                                     |
+| `case`      | Kemungkinan pola yang dicocokkan                              |
+| Wildcard    | Pola `_` yang cocok dengan nilai apa pun                      |
+| OR pattern  | Beberapa pola digabung dengan `                               | `   |
+| Guard       | Kondisi `if` tambahan pada case                               |
 | Fallthrough | Perilaku menjalankan case berikutnya; tidak terjadi di Python |
 
 ## Checklist Sebelum Lanjut

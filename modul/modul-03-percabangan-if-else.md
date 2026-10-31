@@ -6,12 +6,12 @@ Setelah menyelesaikan modul ini, mahasiswa mampu:
 
 1. Menjelaskan cara program mengambil keputusan dengan `if`.
 2. Menggunakan `if`, `elif`, dan `else` untuk beberapa kemungkinan.
-3. Menyusun percabangan bersarang (*nested*) dengan benar.
+3. Menyusun percabangan bersarang (_nested_) dengan benar.
 4. Menggabungkan beberapa kondisi menggunakan `and`, `or`, dan `not`.
 5. Menentukan urutan kondisi yang tepat agar hasil sesuai aturan.
 
 **Prasyarat:** Modul 1 dan Modul 2.  
-**Estimasi waktu:** 2 jam.
+**Estimasi waktu:** 1.5 jam (90 menit teori dan praktik terbimbing).
 
 > Setelah modul ini, pilihan berbasis menu akan dipelajari di Modul 4 dengan `match-case`.
 
@@ -78,7 +78,7 @@ Belum lulus
 
 ### 4. `if`, `elif`, dan `else`
 
-Gunakan `elif` (singkatan dari *else if*) untuk memeriksa beberapa kemungkinan secara berurutan. Python berhenti memeriksa setelah menemukan kondisi pertama yang `True`.
+Gunakan `elif` (singkatan dari _else if_) untuk memeriksa beberapa kemungkinan secara berurutan. Python berhenti memeriksa setelah menemukan kondisi pertama yang `True`.
 
 ```python
 nilai = 82
@@ -126,11 +126,11 @@ Boleh mengendarai mobil.
 
 ### 6. Menggabungkan Kondisi
 
-| Operator | Arti | Contoh | Hasil |
-|---|---|---|---|
-| `and` | Semua kondisi harus benar | `umur >= 17 and punya_sim` | `True` bila keduanya benar |
-| `or` | Salah satu kondisi benar | `nilai < 0 or nilai > 100` | `True` bila salah satu benar |
-| `not` | Membalik kondisi | `not lulus` | `True` bila `lulus` bernilai `False` |
+| Operator | Arti                      | Contoh                     | Hasil                                |
+| -------- | ------------------------- | -------------------------- | ------------------------------------ |
+| `and`    | Semua kondisi harus benar | `umur >= 17 and punya_sim` | `True` bila keduanya benar           |
+| `or`     | Salah satu kondisi benar  | `nilai < 0 or nilai > 100` | `True` bila salah satu benar         |
+| `not`    | Membalik kondisi          | `not lulus`                | `True` bila `lulus` bernilai `False` |
 
 Contoh:
 
@@ -168,14 +168,14 @@ Jika indentasi tidak konsisten, muncul `IndentationError`. Pilih 4 spasi dan gun
 
 ### 8. Kesalahan Umum
 
-| Kesalahan | Contoh | Akibat | Perbaikan |
-|---|---|---|---|
-| Lupa titik dua | `if nilai > 75` | `SyntaxError` | `if nilai > 75:` |
-| Memakai `=` | `if nilai = 75:` | `SyntaxError` | `if nilai == 75:` |
-| Indentasi salah | Blok `if` tidak menjorok | `IndentationError` | Beri 4 spasi |
-| `elif` setelah `else` | `else:` lalu `elif` | `SyntaxError` | Letakkan `elif` sebelum `else` |
-| Membandingkan tipe berbeda | `input(...) > 75` | `TypeError` | Ubah dengan `int()` |
-| Urutan kondisi salah | Rentang besar diperiksa lebih dulu | Hasil keliru | Periksa dari kondisi paling spesifik |
+| Kesalahan                  | Contoh                             | Akibat             | Perbaikan                            |
+| -------------------------- | ---------------------------------- | ------------------ | ------------------------------------ |
+| Lupa titik dua             | `if nilai > 75`                    | `SyntaxError`      | `if nilai > 75:`                     |
+| Memakai `=`                | `if nilai = 75:`                   | `SyntaxError`      | `if nilai == 75:`                    |
+| Indentasi salah            | Blok `if` tidak menjorok           | `IndentationError` | Beri 4 spasi                         |
+| `elif` setelah `else`      | `else:` lalu `elif`                | `SyntaxError`      | Letakkan `elif` sebelum `else`       |
+| Membandingkan tipe berbeda | `input(...) > 75`                  | `TypeError`        | Ubah dengan `int()`                  |
+| Urutan kondisi salah       | Rentang besar diperiksa lebih dulu | Hasil keliru       | Periksa dari kondisi paling spesifik |
 
 ### 9. Tips Menulis Kondisi
 
@@ -275,12 +275,12 @@ Masukkan bilangan: 7
 Minta nilai akhir 0–100, lalu tampilkan nilai huruf dengan aturan:
 
 | Rentang | Huruf |
-|---|---|
-| 85–100 | A |
-| 75–84 | B |
-| 65–74 | C |
-| 55–64 | D |
-| 0–54 | E |
+| ------- | ----- |
+| 85–100  | A     |
+| 75–84   | B     |
+| 65–74   | C     |
+| 55–64   | D     |
+| 0–54    | E     |
 
 Jika nilai di luar 0–100, tampilkan `Nilai tidak valid`.
 
@@ -321,11 +321,11 @@ Masukkan tahun: 1900
 Minta total belanja, lalu hitung diskon dan total yang harus dibayar.
 
 | Total belanja | Diskon |
-|---|---|
-| ≥ 500000 | 20% |
-| ≥ 250000 | 10% |
-| ≥ 100000 | 5% |
-| < 100000 | 0% |
+| ------------- | ------ |
+| ≥ 500000      | 20%    |
+| ≥ 250000      | 10%    |
+| ≥ 100000      | 5%     |
+| < 100000      | 0%     |
 
 Contoh interaksi:
 
@@ -361,10 +361,10 @@ Login berhasil
 Buat program penghitung tarif parkir dengan aturan:
 
 | Jenis kendaraan | Tarif per jam |
-|---|---|
-| Motor | Rp2,000 |
-| Mobil | Rp5,000 |
-| Truk | Rp10,000 |
+| --------------- | ------------- |
+| Motor           | Rp2,000       |
+| Mobil           | Rp5,000       |
+| Truk            | Rp10,000      |
 
 Ketentuan tambahan:
 
@@ -409,13 +409,13 @@ Jenis kendaraan tidak valid.
 
 ## Istilah Penting
 
-| Istilah | Arti |
-|---|---|
-| Kondisi | Ekspresi yang bernilai `True` atau `False` |
-| Blok kode | Sekumpulan baris dengan indentasi sama |
-| Nested | Berada di dalam blok lain |
-| `elif` | Singkatan dari *else if* |
-| Indentasi | Jarak menjorok di awal baris |
+| Istilah   | Arti                                       |
+| --------- | ------------------------------------------ |
+| Kondisi   | Ekspresi yang bernilai `True` atau `False` |
+| Blok kode | Sekumpulan baris dengan indentasi sama     |
+| Nested    | Berada di dalam blok lain                  |
+| `elif`    | Singkatan dari _else if_                   |
+| Indentasi | Jarak menjorok di awal baris               |
 
 ## Checklist Sebelum Lanjut
 

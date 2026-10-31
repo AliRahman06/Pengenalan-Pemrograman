@@ -11,7 +11,7 @@ Setelah menyelesaikan modul ini, mahasiswa mampu:
 5. Menghitung ekspresi dengan urutan operasi yang benar serta menampilkan hasil dengan format yang rapi.
 
 **Prasyarat:** Modul 1 — Pengenalan Pemrograman dan Instalasi Lingkungan Kerja.  
-**Estimasi waktu:** 2 jam.
+**Estimasi waktu:** 1.5 jam (90 menit teori dan praktik terbimbing).
 
 ---
 
@@ -60,7 +60,7 @@ Penugasan `skor = 90` mengganti nilai lama. Variabel hanya menyimpan nilai terak
 - Tidak boleh diawali angka.
 - Tidak boleh memakai spasi.
 - Tidak boleh memakai kata kunci Python seperti `if`, `for`, atau `class`.
-- Bersifat *case-sensitive*: `nama` berbeda dengan `Nama`.
+- Bersifat _case-sensitive_: `nama` berbeda dengan `Nama`.
 - Gunakan gaya `snake_case`, contoh `nilai_akhir`.
 - Pilih nama yang menjelaskan isi variabel, bukan nama acak.
 
@@ -76,12 +76,12 @@ jumlah_barang = 3
 
 Tipe data menentukan **jenis nilai** yang disimpan. Bayangkan tipe data seperti jenis wadah: ada wadah untuk angka, ada wadah untuk teks.
 
-| Tipe | Nama | Contoh | Keterangan |
-|---|---|---|---|
-| `int` | Bilangan bulat | `10`, `-3`, `0` | Tidak memiliki titik desimal |
+| Tipe    | Nama             | Contoh                | Keterangan                    |
+| ------- | ---------------- | --------------------- | ----------------------------- |
+| `int`   | Bilangan bulat   | `10`, `-3`, `0`       | Tidak memiliki titik desimal  |
 | `float` | Bilangan desimal | `3.14`, `-0.5`, `2.0` | Menggunakan titik, bukan koma |
-| `str` | Teks (string) | `"Halo"`, `'123'` | Selalu diapit tanda kutip |
-| `bool` | Boolean | `True`, `False` | Hanya dua nilai |
+| `str`   | Teks (string)    | `"Halo"`, `'123'`     | Selalu diapit tanda kutip     |
+| `bool`  | Boolean          | `True`, `False`       | Hanya dua nilai               |
 
 Perhatikan bahwa `123` adalah `int`, sedangkan `"123"` adalah `str`. Keduanya terlihat mirip, tetapi berbeda tipe.
 
@@ -187,15 +187,15 @@ Cara ketiga disebut **f-string**. Awali teks dengan `f`, lalu tulis variabel di 
 
 ### 7. Operator Aritmatika
 
-| Operator | Nama | Contoh | Hasil |
-|---|---|---|---|
-| `+` | Penjumlahan | `7 + 3` | `10` |
-| `-` | Pengurangan | `7 - 3` | `4` |
-| `*` | Perkalian | `7 * 3` | `21` |
-| `/` | Pembagian | `7 / 2` | `3.5` |
-| `//` | Pembagian bulat | `7 // 2` | `3` |
-| `%` | Modulo (sisa bagi) | `7 % 2` | `1` |
-| `**` | Pangkat | `2 ** 3` | `8` |
+| Operator | Nama               | Contoh   | Hasil |
+| -------- | ------------------ | -------- | ----- |
+| `+`      | Penjumlahan        | `7 + 3`  | `10`  |
+| `-`      | Pengurangan        | `7 - 3`  | `4`   |
+| `*`      | Perkalian          | `7 * 3`  | `21`  |
+| `/`      | Pembagian          | `7 / 2`  | `3.5` |
+| `//`     | Pembagian bulat    | `7 // 2` | `3`   |
+| `%`      | Modulo (sisa bagi) | `7 % 2`  | `1`   |
+| `**`     | Pangkat            | `2 ** 3` | `8`   |
 
 Catatan:
 
@@ -255,24 +255,24 @@ print(f"Umur: {18}")
 
 Perbandingan menghasilkan `bool`.
 
-| Operator | Arti | Contoh | Hasil |
-|---|---|---|---|
-| `==` | Sama dengan | `5 == 5` | `True` |
-| `!=` | Tidak sama dengan | `5 != 3` | `True` |
-| `>` | Lebih besar | `5 > 3` | `True` |
-| `<` | Lebih kecil | `5 < 3` | `False` |
-| `>=` | Lebih besar atau sama | `5 >= 5` | `True` |
-| `<=` | Lebih kecil atau sama | `4 <= 5` | `True` |
+| Operator | Arti                  | Contoh   | Hasil   |
+| -------- | --------------------- | -------- | ------- |
+| `==`     | Sama dengan           | `5 == 5` | `True`  |
+| `!=`     | Tidak sama dengan     | `5 != 3` | `True`  |
+| `>`      | Lebih besar           | `5 > 3`  | `True`  |
+| `<`      | Lebih kecil           | `5 < 3`  | `False` |
+| `>=`     | Lebih besar atau sama | `5 >= 5` | `True`  |
+| `<=`     | Lebih kecil atau sama | `4 <= 5` | `True`  |
 
 Jangan tertukar antara `=` (penugasan) dan `==` (perbandingan).
 
 ### 10. Operator Logika
 
-| Operator | Arti | Contoh | Hasil |
-|---|---|---|---|
-| `and` | Keduanya benar | `True and False` | `False` |
-| `or` | Salah satu benar | `True or False` | `True` |
-| `not` | Membalik nilai | `not True` | `False` |
+| Operator | Arti             | Contoh           | Hasil   |
+| -------- | ---------------- | ---------------- | ------- |
+| `and`    | Keduanya benar   | `True and False` | `False` |
+| `or`     | Salah satu benar | `True or False`  | `True`  |
+| `not`    | Membalik nilai   | `not True`       | `False` |
 
 Operator logika akan banyak dipakai pada modul percabangan.
 
@@ -358,14 +358,14 @@ Penjelasan:
 
 ### 14. Kesalahan Umum
 
-| Kesalahan | Contoh | Penyebab | Perbaikan |
-|---|---|---|---|
-| `NameError` | `print(nama)` | Variabel belum dibuat | Buat dulu: `nama = "Ayu"` |
-| `TypeError` | `"5" + 5` | Teks dijumlahkan dengan angka | `int("5") + 5` |
-| `ValueError` | `int("3.5")` | Format teks bukan bilangan bulat | `int(float("3.5"))` |
-| `ZeroDivisionError` | `10 / 0` | Pembagian dengan nol | Periksa nilai pembagi |
-| Hasil tak terduga | `1 / 2` dianggap `0` | `/` menghasilkan desimal | Gunakan `//` bila ingin bulat |
-| Salah urutan | `2 + 3 * 4` dianggap `20` | Perkalian didahulukan | Tambahkan `(2 + 3) * 4` |
+| Kesalahan           | Contoh                    | Penyebab                         | Perbaikan                     |
+| ------------------- | ------------------------- | -------------------------------- | ----------------------------- |
+| `NameError`         | `print(nama)`             | Variabel belum dibuat            | Buat dulu: `nama = "Ayu"`     |
+| `TypeError`         | `"5" + 5`                 | Teks dijumlahkan dengan angka    | `int("5") + 5`                |
+| `ValueError`        | `int("3.5")`              | Format teks bukan bilangan bulat | `int(float("3.5"))`           |
+| `ZeroDivisionError` | `10 / 0`                  | Pembagian dengan nol             | Periksa nilai pembagi         |
+| Hasil tak terduga   | `1 / 2` dianggap `0`      | `/` menghasilkan desimal         | Gunakan `//` bila ingin bulat |
+| Salah urutan        | `2 + 3 * 4` dianggap `20` | Perkalian didahulukan            | Tambahkan `(2 + 3) * 4`       |
 
 ### 15. Tips Praktikum
 
@@ -572,17 +572,17 @@ Tinggi      : 170 cm
 
 ## Istilah Penting
 
-| Istilah | Arti |
-|---|---|
-| Variabel | Nama yang menyimpan sebuah nilai |
-| Penugasan | Proses memberi nilai ke variabel dengan `=` |
-| Casting | Proses mengubah tipe data |
-| Operand | Nilai yang dioperasikan, misalnya `5` dan `3` pada `5 + 3` |
-| Operator | Simbol yang melakukan operasi, misalnya `+` atau `*` |
-| Ekspresi | Kombinasi nilai dan operator yang menghasilkan nilai baru |
-| Modulo | Sisa hasil pembagian |
-| Precedence | Urutan prioritas operasi |
-| f-string | Format teks yang memungkinkan penyisipan variabel dengan `{}` |
+| Istilah    | Arti                                                          |
+| ---------- | ------------------------------------------------------------- |
+| Variabel   | Nama yang menyimpan sebuah nilai                              |
+| Penugasan  | Proses memberi nilai ke variabel dengan `=`                   |
+| Casting    | Proses mengubah tipe data                                     |
+| Operand    | Nilai yang dioperasikan, misalnya `5` dan `3` pada `5 + 3`    |
+| Operator   | Simbol yang melakukan operasi, misalnya `+` atau `*`          |
+| Ekspresi   | Kombinasi nilai dan operator yang menghasilkan nilai baru     |
+| Modulo     | Sisa hasil pembagian                                          |
+| Precedence | Urutan prioritas operasi                                      |
+| f-string   | Format teks yang memungkinkan penyisipan variabel dengan `{}` |
 
 ## Checklist Sebelum Lanjut
 

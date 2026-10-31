@@ -12,7 +12,7 @@ Setelah menyelesaikan modul ini, mahasiswa mampu:
 6. Mengimpor modul standar serta membuat modul sendiri.
 
 **Prasyarat:** Modul 1–7.  
-**Estimasi waktu:** 3 jam.
+**Estimasi waktu:** 1.5 jam (90 menit teori dan praktik terbimbing).
 
 ---
 
@@ -337,15 +337,15 @@ Saat `python geometri.py` dijalankan, output `16` muncul. Saat diimpor dari file
 
 ### 11. Kesalahan Umum
 
-| Kesalahan | Contoh | Akibat | Perbaikan |
-|---|---|---|---|
-| Lupa `return` | Fungsi hanya `print` | Hasil tidak bisa diolah, bernilai `None` | Gunakan `return` |
-| Lupa memanggil | `def sapa(): ...` lalu `sapa` | Fungsi tidak berjalan | Tulis `sapa()` |
-| Salah jumlah argumen | `sapa()` padahal butuh `nama` | `TypeError` | Kirim argumen yang sesuai |
-| Variabel lokal diakses di luar | `print(hasil)` | `NameError` | Kembalikan nilai dengan `return` |
-| Fungsi dipanggil sebelum dibuat | Panggilan di atas `def` | `NameError` | Pindahkan `def` ke atas |
-| Nama file sama dengan modul | `math.py` | Modul standar tertutupi | Ganti nama file |
-| Indentasi salah | `return` di luar fungsi | `SyntaxError` | Periksa indentasi |
+| Kesalahan                       | Contoh                        | Akibat                                   | Perbaikan                        |
+| ------------------------------- | ----------------------------- | ---------------------------------------- | -------------------------------- |
+| Lupa `return`                   | Fungsi hanya `print`          | Hasil tidak bisa diolah, bernilai `None` | Gunakan `return`                 |
+| Lupa memanggil                  | `def sapa(): ...` lalu `sapa` | Fungsi tidak berjalan                    | Tulis `sapa()`                   |
+| Salah jumlah argumen            | `sapa()` padahal butuh `nama` | `TypeError`                              | Kirim argumen yang sesuai        |
+| Variabel lokal diakses di luar  | `print(hasil)`                | `NameError`                              | Kembalikan nilai dengan `return` |
+| Fungsi dipanggil sebelum dibuat | Panggilan di atas `def`       | `NameError`                              | Pindahkan `def` ke atas          |
+| Nama file sama dengan modul     | `math.py`                     | Modul standar tertutupi                  | Ganti nama file                  |
+| Indentasi salah                 | `return` di luar fungsi       | `SyntaxError`                            | Periksa indentasi                |
 
 ### 12. Penanganan Error Sederhana (Pengayaan)
 
@@ -613,15 +613,15 @@ Refactor program tersebut menjadi:
 
 ## Istilah Penting
 
-| Istilah | Arti |
-|---|---|
-| Fungsi | Blok kode bernama yang dapat dipanggil |
-| Parameter | Variabel pada definisi fungsi |
-| Argumen | Nilai yang dikirim saat memanggil fungsi |
-| `return` | Mengembalikan nilai dari fungsi |
-| Scope | Ruang lingkup akses variabel |
-| Modul | File Python berisi kode yang dapat diimpor |
-| Docstring | Dokumentasi singkat di dalam fungsi |
+| Istilah   | Arti                                       |
+| --------- | ------------------------------------------ |
+| Fungsi    | Blok kode bernama yang dapat dipanggil     |
+| Parameter | Variabel pada definisi fungsi              |
+| Argumen   | Nilai yang dikirim saat memanggil fungsi   |
+| `return`  | Mengembalikan nilai dari fungsi            |
+| Scope     | Ruang lingkup akses variabel               |
+| Modul     | File Python berisi kode yang dapat diimpor |
+| Docstring | Dokumentasi singkat di dalam fungsi        |
 
 ## Checklist Sebelum Lanjut
 

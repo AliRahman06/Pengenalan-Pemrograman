@@ -12,7 +12,7 @@ Setelah menyelesaikan modul ini, mahasiswa mampu:
 6. Menelusuri struktur data dengan perulangan.
 
 **Prasyarat:** Modul 1–6.  
-**Estimasi waktu:** 3 jam.
+**Estimasi waktu:** 1.5 jam (90 menit teori dan praktik terbimbing).
 
 ---
 
@@ -64,15 +64,15 @@ Output:
 
 **Method penting pada list:**
 
-| Method | Fungsi | Contoh |
-|---|---|---|
-| `append(x)` | Menambah di akhir | `buah.append("pisang")` |
-| `insert(i, x)` | Menyisipkan di indeks | `buah.insert(1, "melon")` |
-| `remove(x)` | Menghapus nilai tertentu | `buah.remove("apel")` |
-| `pop()` | Menghapus dan mengambil elemen terakhir | `buah.pop()` |
-| `sort()` | Mengurutkan | `angka.sort()` |
-| `reverse()` | Membalik urutan | `angka.reverse()` |
-| `count(x)` | Menghitung kemunculan | `angka.count(20)` |
+| Method         | Fungsi                                  | Contoh                    |
+| -------------- | --------------------------------------- | ------------------------- |
+| `append(x)`    | Menambah di akhir                       | `buah.append("pisang")`   |
+| `insert(i, x)` | Menyisipkan di indeks                   | `buah.insert(1, "melon")` |
+| `remove(x)`    | Menghapus nilai tertentu                | `buah.remove("apel")`     |
+| `pop()`        | Menghapus dan mengambil elemen terakhir | `buah.pop()`              |
+| `sort()`       | Mengurutkan                             | `angka.sort()`            |
+| `reverse()`    | Membalik urutan                         | `angka.reverse()`         |
+| `count(x)`     | Menghitung kemunculan                   | `angka.count(20)`         |
 
 Fungsi bawaan yang sering dipakai: `len()`, `sum()`, `min()`, `max()`.
 
@@ -236,12 +236,12 @@ Output:
 {1, 2, 5, 6}
 ```
 
-| Operasi | Simbol | Arti |
-|---|---|---|
-| Union | `|` atau `.union()` | Semua anggota |
-| Intersection | `&` atau `.intersection()` | Anggota bersama |
-| Difference | `-` atau `.difference()` | Anggota `a` yang tidak ada di `b` |
-| Symmetric difference | `^` | Anggota yang hanya ada di salah satu |
+| Operasi              | Simbol                     | Arti                                 |
+| -------------------- | -------------------------- | ------------------------------------ | ------------- |
+| Union                | `                          | `atau`.union()`                      | Semua anggota |
+| Intersection         | `&` atau `.intersection()` | Anggota bersama                      |
+| Difference           | `-` atau `.difference()`   | Anggota `a` yang tidak ada di `b`    |
+| Symmetric difference | `^`                        | Anggota yang hanya ada di salah satu |
 
 Method: `add()`, `remove()`, `discard()`, `clear()`.
 
@@ -313,14 +313,14 @@ Output:
 
 ### 8. Kesalahan Umum
 
-| Kesalahan | Contoh | Akibat | Perbaikan |
-|---|---|---|---|
-| Indeks di luar batas | `buah[5]` pada list 3 elemen | `IndexError` | Periksa `len()` atau gunakan indeks valid |
-| Kunci tidak ada | `data["alamat"]` | `KeyError` | Gunakan `get()` atau periksa `in` |
-| Mengubah tuple | `t[0] = 1` | `TypeError` | Gunakan list bila data perlu diubah |
-| Salah memakai `append` | `buah.append(["pisang"])` | Menambah list di dalam list | Gunakan `append("pisang")` |
-| Menghapus saat iterasi | `for x in data: data.remove(x)` | Sebagian data terlewat | Iterasi salinan atau kumpulkan lalu hapus |
-| `set` diindeks | `s[0]` | `TypeError` | Ubah ke list bila perlu urutan |
+| Kesalahan              | Contoh                          | Akibat                      | Perbaikan                                 |
+| ---------------------- | ------------------------------- | --------------------------- | ----------------------------------------- |
+| Indeks di luar batas   | `buah[5]` pada list 3 elemen    | `IndexError`                | Periksa `len()` atau gunakan indeks valid |
+| Kunci tidak ada        | `data["alamat"]`                | `KeyError`                  | Gunakan `get()` atau periksa `in`         |
+| Mengubah tuple         | `t[0] = 1`                      | `TypeError`                 | Gunakan list bila data perlu diubah       |
+| Salah memakai `append` | `buah.append(["pisang"])`       | Menambah list di dalam list | Gunakan `append("pisang")`                |
+| Menghapus saat iterasi | `for x in data: data.remove(x)` | Sebagian data terlewat      | Iterasi salinan atau kumpulkan lalu hapus |
+| `set` diindeks         | `s[0]`                          | `TypeError`                 | Ubah ke list bila perlu urutan            |
 
 ### 9. Tips
 
@@ -611,14 +611,14 @@ Total nilai inventaris: Rp87,000
 
 ## Istilah Penting
 
-| Istilah | Arti |
-|---|---|
-| Elemen | Satu nilai di dalam struktur data |
-| Indeks | Posisi elemen, dimulai dari 0 |
-| Slicing | Mengambil sebagian list |
-| Kunci | Nama penanda pada `dict` |
-| Nilai | Isi yang dipasangkan dengan kunci |
-| Unik | Tidak ada duplikat |
+| Istilah | Arti                                    |
+| ------- | --------------------------------------- |
+| Elemen  | Satu nilai di dalam struktur data       |
+| Indeks  | Posisi elemen, dimulai dari 0           |
+| Slicing | Mengambil sebagian list                 |
+| Kunci   | Nama penanda pada `dict`                |
+| Nilai   | Isi yang dipasangkan dengan kunci       |
+| Unik    | Tidak ada duplikat                      |
 | Matriks | Kumpulan data berbentuk baris dan kolom |
 
 ## Checklist Sebelum Lanjut

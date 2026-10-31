@@ -11,7 +11,7 @@ Setelah menyelesaikan modul ini, mahasiswa mampu:
 5. Menyusun perulangan bersarang dan menghitung akumulasi nilai.
 
 **Prasyarat:** Modul 1–4.  
-**Estimasi waktu:** 2 jam.
+**Estimasi waktu:** 1.5 jam (90 menit teori dan praktik terbimbing).
 
 > Modul ini membahas `for`, yaitu perulangan untuk jumlah putaran yang sudah diketahui. Perulangan `while` dibahas di Modul 6.
 
@@ -66,10 +66,10 @@ Saya suka mangga
 
 `range()` menghasilkan urutan bilangan.
 
-| Bentuk | Hasil |
-|---|---|
-| `range(5)` | `0, 1, 2, 3, 4` |
-| `range(1, 6)` | `1, 2, 3, 4, 5` |
+| Bentuk            | Hasil           |
+| ----------------- | --------------- |
+| `range(5)`        | `0, 1, 2, 3, 4` |
+| `range(1, 6)`     | `1, 2, 3, 4, 5` |
 | `range(0, 10, 2)` | `0, 2, 4, 6, 8` |
 | `range(5, 0, -1)` | `5, 4, 3, 2, 1` |
 
@@ -156,7 +156,7 @@ Output:
 
 ### 6. Perulangan Bersarang
 
-Perulangan di dalam perulangan disebut *nested loop*. Setiap putaran luar menjalankan seluruh putaran dalam.
+Perulangan di dalam perulangan disebut _nested loop_. Setiap putaran luar menjalankan seluruh putaran dalam.
 
 ```python
 for baris in range(1, 4):
@@ -200,13 +200,13 @@ Gunakan fitur ini secukupnya; jika membingungkan, gunakan variabel penanda seper
 
 ### 8. Kesalahan Umum
 
-| Kesalahan | Contoh | Akibat | Perbaikan |
-|---|---|---|---|
-| Salah batas `range` | `range(1, 5)` untuk 1–5 | Angka 5 tidak ikut | Gunakan `range(1, 6)` |
-| `break` terlalu awal | `break` di luar `if` | Loop berhenti pada putaran pertama | Tempatkan `break` di dalam kondisi |
-| Indentasi salah | Perintah di luar loop | Hanya dijalankan sekali | Periksa indentasi |
-| Mengubah variabel loop | `i += 1` di dalam `for` | Hasil tidak seperti harapan | Jangan ubah variabel loop |
-| Salah urutan nested | Loop dalam ditulis di luar loop luar | `IndentationError` | Masukkan loop dalam ke blok loop luar |
+| Kesalahan              | Contoh                               | Akibat                             | Perbaikan                             |
+| ---------------------- | ------------------------------------ | ---------------------------------- | ------------------------------------- |
+| Salah batas `range`    | `range(1, 5)` untuk 1–5              | Angka 5 tidak ikut                 | Gunakan `range(1, 6)`                 |
+| `break` terlalu awal   | `break` di luar `if`                 | Loop berhenti pada putaran pertama | Tempatkan `break` di dalam kondisi    |
+| Indentasi salah        | Perintah di luar loop                | Hanya dijalankan sekali            | Periksa indentasi                     |
+| Mengubah variabel loop | `i += 1` di dalam `for`              | Hasil tidak seperti harapan        | Jangan ubah variabel loop             |
+| Salah urutan nested    | Loop dalam ditulis di luar loop luar | `IndentationError`                 | Masukkan loop dalam ke blok loop luar |
 
 ### 9. Tips
 
@@ -268,7 +268,7 @@ print()
 Output:
 
 ```text
-1 3 5 7 9 
+1 3 5 7 9
 ```
 
 ---
@@ -420,14 +420,14 @@ Jumlah: 20
 
 ## Istilah Penting
 
-| Istilah | Arti |
-|---|---|
-| Iterasi | Satu kali putaran perulangan |
-| Akumulator | Variabel penjumlah nilai |
-| Pencacah | Variabel penghitung jumlah kejadian |
-| Nested loop | Perulangan di dalam perulangan |
-| `range` | Fungsi pembuat urutan bilangan |
-| `for-else` | Blok `else` yang berjalan bila loop tidak dihentikan `break` |
+| Istilah     | Arti                                                         |
+| ----------- | ------------------------------------------------------------ |
+| Iterasi     | Satu kali putaran perulangan                                 |
+| Akumulator  | Variabel penjumlah nilai                                     |
+| Pencacah    | Variabel penghitung jumlah kejadian                          |
+| Nested loop | Perulangan di dalam perulangan                               |
+| `range`     | Fungsi pembuat urutan bilangan                               |
+| `for-else`  | Blok `else` yang berjalan bila loop tidak dihentikan `break` |
 
 ## Checklist Sebelum Lanjut
 

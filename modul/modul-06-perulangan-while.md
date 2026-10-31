@@ -11,7 +11,7 @@ Setelah menyelesaikan modul ini, mahasiswa mampu:
 5. Menghindari perulangan tak berujung dan memilih antara `for` dan `while`.
 
 **Prasyarat:** Modul 1–5.  
-**Estimasi waktu:** 2–3 jam.
+**Estimasi waktu:** 1.5 jam (90 menit teori dan praktik terbimbing).
 
 > `for` cocok ketika jumlah putaran sudah diketahui. `while` cocok ketika perulangan bergantung pada kondisi yang dapat berubah, misalnya menunggu pengguna memasukkan nilai yang benar.
 
@@ -244,22 +244,22 @@ Pastikan setiap loop memiliki cara untuk berhenti.
 
 ### 9. `for` atau `while`?
 
-| Gunakan `for` | Gunakan `while` |
-|---|---|
-| Jumlah putaran diketahui | Jumlah putaran belum diketahui |
-| Menelusuri `range`, teks, atau data | Menunggu kondisi tertentu |
-| Contoh: 10 kali, 1 sampai n | Contoh: sampai input benar, sampai saldo cukup |
+| Gunakan `for`                       | Gunakan `while`                                |
+| ----------------------------------- | ---------------------------------------------- |
+| Jumlah putaran diketahui            | Jumlah putaran belum diketahui                 |
+| Menelusuri `range`, teks, atau data | Menunggu kondisi tertentu                      |
+| Contoh: 10 kali, 1 sampai n         | Contoh: sampai input benar, sampai saldo cukup |
 
 ### 10. Kesalahan Umum
 
-| Kesalahan | Contoh | Akibat | Perbaikan |
-|---|---|---|---|
-| Lupa mengubah variabel | `while i < 5:` tanpa `i += 1` | Loop tak berujung | Tambahkan perubahan variabel |
-| Kondisi tidak pernah salah | `while i > 0:` dengan `i += 1` | Loop tak berujung | Pastikan nilai menuju kondisi berhenti |
-| `break` di luar `if` | `break` langsung di awal loop | Loop berhenti pada putaran pertama | Tempatkan `break` di dalam kondisi |
-| Sentinel salah | `while angka == 0:` | Loop tidak berjalan atau berhenti terlalu cepat | Periksa operator perbandingan |
-| Indentasi salah | Perintah keluar dari loop | Hanya dijalankan sekali | Periksa indentasi |
-| Lupa input ulang | Input hanya di luar loop | Nilai tidak pernah berubah | Minta input di dalam loop |
+| Kesalahan                  | Contoh                         | Akibat                                          | Perbaikan                              |
+| -------------------------- | ------------------------------ | ----------------------------------------------- | -------------------------------------- |
+| Lupa mengubah variabel     | `while i < 5:` tanpa `i += 1`  | Loop tak berujung                               | Tambahkan perubahan variabel           |
+| Kondisi tidak pernah salah | `while i > 0:` dengan `i += 1` | Loop tak berujung                               | Pastikan nilai menuju kondisi berhenti |
+| `break` di luar `if`       | `break` langsung di awal loop  | Loop berhenti pada putaran pertama              | Tempatkan `break` di dalam kondisi     |
+| Sentinel salah             | `while angka == 0:`            | Loop tidak berjalan atau berhenti terlalu cepat | Periksa operator perbandingan          |
+| Indentasi salah            | Perintah keluar dari loop      | Hanya dijalankan sekali                         | Periksa indentasi                      |
+| Lupa input ulang           | Input hanya di luar loop       | Nilai tidak pernah berubah                      | Minta input di dalam loop              |
 
 ### 11. Tips
 
@@ -506,14 +506,14 @@ Terima kasih.
 
 ## Istilah Penting
 
-| Istilah | Arti |
-|---|---|
-| Kondisi | Ekspresi yang menentukan lanjut atau berhentinya loop |
-| Sentinel | Nilai penanda berhenti |
-| Pencacah | Variabel penghitung jumlah putaran |
-| Akumulator | Variabel penjumlah nilai |
-| Infinite loop | Perulangan yang tidak pernah berhenti |
-| `while-else` | Blok `else` yang berjalan bila loop tidak dihentikan `break` |
+| Istilah       | Arti                                                         |
+| ------------- | ------------------------------------------------------------ |
+| Kondisi       | Ekspresi yang menentukan lanjut atau berhentinya loop        |
+| Sentinel      | Nilai penanda berhenti                                       |
+| Pencacah      | Variabel penghitung jumlah putaran                           |
+| Akumulator    | Variabel penjumlah nilai                                     |
+| Infinite loop | Perulangan yang tidak pernah berhenti                        |
+| `while-else`  | Blok `else` yang berjalan bila loop tidak dihentikan `break` |
 
 ## Checklist Sebelum Lanjut
 
