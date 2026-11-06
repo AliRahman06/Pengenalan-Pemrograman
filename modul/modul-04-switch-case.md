@@ -453,11 +453,11 @@ Nominal harus kelipatan Rp50,000.
 ## Istilah Penting
 
 | Istilah     | Arti                                                          |
-| ----------- | ------------------------------------------------------------- | --- |
+| ----------- | ------------------------------------------------------------- |
 | `match`     | Nilai yang akan diperiksa                                     |
 | `case`      | Kemungkinan pola yang dicocokkan                              |
 | Wildcard    | Pola `_` yang cocok dengan nilai apa pun                      |
-| OR pattern  | Beberapa pola digabung dengan `                               | `   |
+| OR pattern  | Beberapa pola digabung dengan `                               |
 | Guard       | Kondisi `if` tambahan pada case                               |
 | Fallthrough | Perilaku menjalankan case berikutnya; tidak terjadi di Python |
 
