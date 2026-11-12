@@ -21,7 +21,12 @@ Setelah menyelesaikan modul ini, mahasiswa mampu:
 
 ### 1. Konsep Percabangan
 
-Percabangan membuat program memilih langkah berdasarkan kondisi. Bayangkan lampu lalu lintas: jika lampu hijau, kendaraan berjalan; jika merah, kendaraan berhenti.
+<!-- Konsep dasar percabangan   -->
+<!-- berikan penjelasan tentang percabangan dan bagaimana cara kerjanya -->
+
+Percabangan adalah struktur kontrol yang memungkinkan program untuk memilih jalur eksekusi berdasarkan kondisi tertentu. Dengan percabangan, program dapat membuat keputusan dan mengeksekusi blok kode yang sesuai dengan `kondisi` yang diberikan.
+
+Bayangkan lampu lalu lintas: jika lampu hijau, kendaraan berjalan; jika merah, kendaraan berhenti.
 
 Kondisi pada Python berupa ekspresi yang bernilai `True` atau `False`.
 
@@ -57,7 +62,7 @@ Perhatikan:
 
 ### 3. `if` dan `else`
 
-`else` dijalankan jika kondisi `if` bernilai `False`.
+`else` digunakan untuk menangani kondisi yang tidak terpenuhi oleh `if`. Jika kondisi `if` bernilai `False`, maka blok kode di dalam `else` akan dijalankan. Dengan kata lain, `else` dijalankan jika kondisi `if` bernilai `False`.
 
 ```python
 nilai = 60
@@ -78,7 +83,7 @@ Belum lulus
 
 ### 4. `if`, `elif`, dan `else`
 
-Gunakan `elif` (singkatan dari _else if_) untuk memeriksa beberapa kemungkinan secara berurutan. Python berhenti memeriksa setelah menemukan kondisi pertama yang `True`.
+`elif` (singkatan dari _else if_) digunakan untuk memeriksa beberapa kemungkinan secara berurutan. Python berhenti memeriksa setelah menemukan kondisi pertama yang `True`.
 
 ```python
 nilai = 82
@@ -103,7 +108,7 @@ Urutan penting. Jika `if nilai >= 65` ditulis paling atas, semua nilai di atas 6
 
 ### 5. Percabangan Bersarang
 
-Percabangan bersarang adalah `if` di dalam `if`. Gunakan hanya bila memang diperlukan agar kode tidak sulit dibaca.
+Percabangan bersarang adalah `if` di dalam `if`. digunakan ketika ada kondisi tambahan yang perlu diperiksa hanya jika kondisi sebelumnya terpenuhi. Namun, percabangan bersarang sebaiknya digunakan dengan hati-hati agar kode tetap mudah dibaca dan dipahami.
 
 ```python
 umur = 20
@@ -149,7 +154,7 @@ Nilai tidak valid
 
 ### 7. Indentasi
 
-Python menggunakan indentasi untuk menentukan blok kode.
+Indentasi adalah jarak menjorok di awal baris. Python menggunakan indentasi untuk menentukan blok kode.
 
 ```python
 if True:
@@ -164,7 +169,7 @@ Baris ini di dalam if
 Baris ini di luar if
 ```
 
-Jika indentasi tidak konsisten, muncul `IndentationError`. Pilih 4 spasi dan gunakan secara konsisten.
+Jika indentasi tidak konsisten, muncul `IndentationError`. tambahkan 4 spasi dan gunakan secara konsisten.
 
 ### 8. Kesalahan Umum
 
@@ -295,6 +300,8 @@ Nilai huruf: B
 
 ### Tugas 3.3 — Tahun Kabisat
 
+Tahun kabisat adalah tahun yang memiliki 366 hari.
+
 Minta tahun, lalu tentukan apakah tahun tersebut kabisat.
 
 Aturan tahun kabisat:
@@ -354,7 +361,7 @@ Password: python123
 Login berhasil
 ```
 
-**Ketentuan:** gunakan `and`. Jangan tampilkan password yang diketik.
+**Ketentuan:** gunakan `and`. Jangan tampilkan password yang diketik mengguunakan `getpass` untuk menyembunyikan input.
 
 ### Tugas 3.6 — Tantangan: Tarif Parkir
 
