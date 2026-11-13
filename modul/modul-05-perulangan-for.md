@@ -21,8 +21,6 @@ Setelah menyelesaikan modul ini, mahasiswa mampu:
 
 ### 1. Konsep Perulangan
 
-# berikan penjelasan tentang perulangan
-
 Perulangan (Loop) adalah salah satu konsep dasar dalam pemrograman yang memungkinkan kita untuk mengeksekusi blok kode tertentu berulang kali selama kondisi tertentu terpenuhi. Perulangan sangat berguna ketika kita ingin melakukan tugas yang sama berkali-kali tanpa harus menulis kode yang sama berulang kali.
 
 Ada dua jenis perulangan utama di Python: `for` dan `while`.
