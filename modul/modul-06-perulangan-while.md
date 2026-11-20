@@ -21,7 +21,14 @@ Setelah menyelesaikan modul ini, mahasiswa mampu:
 
 ### 1. Konsep `while`
 
-`while` mengulang blok kode **selama** kondisinya bernilai `True`.
+Loop `while` dalam Python digunakan untuk mengeksekusi blok kode **berulang kali** selama kondisi tertentu bernilai `True`. Sintaks dasar dari loop `while` adalah:
+
+```python
+while kondisi:
+    # blok kode yang akan diulang
+```
+
+contoh:
 
 ```python
 hitung = 1
@@ -73,31 +80,41 @@ Selesai!
 
 Jika `angka -= 1` dihilangkan, kondisi selalu `True` dan program berjalan tanpa henti.
 
-### 3. Pencacah dan Akumulator
+### 3. Penghitung dan Penjumlah
+
+Dalam pemrograman, terdapat dua jenis variabel yang sering digunakan dalam perulangan, yaitu `penghitung (counter)` dan `penjumlah (accumulator)`.
+
+- **Penghitung (Counter)** adalah variabel yang digunakan untuk menghitung banyaknya perulangan yang telah dilakukan.
+- **Penjumlah (Accumulator)** adalah variabel yang digunakan untuk menyimpan dan menjumlahkan nilai secara bertahap selama perulangan berlangsung.
+
+Contoh penggunaan penghitung dan penjumlah dalam Python:
 
 ```python
 jumlah = 0
-pencacah = 0
+penghitung = 0
 
-while pencacah < 5:
-    pencacah += 1
-    jumlah += pencacah
+while penghitung < 5:
+    penghitung += 1
+    jumlah += penghitung
 
 print(f"Jumlah: {jumlah}")
-print(f"Banyak data: {pencacah}")
-print(f"Rata-rata: {jumlah / pencacah}")
+print(f"Banyak data: {penghitung}")
+print(f"Rata-rata: {jumlah / penghitung}")
 ```
 
 Output:
 
-```text
+```
 Jumlah: 15
 Banyak data: 5
 Rata-rata: 3.0
 ```
 
-- **Pencacah** (`pencacah`) menghitung banyaknya putaran.
-- **Akumulator** (`jumlah`) menjumlahkan nilai.
+Penjelasan:
+
+- Variabel `penghitung` bertambah 1 setiap kali perulangan dilakukan hingga mencapai 5.
+- Variabel `jumlah` menyimpan hasil penjumlahan nilai dari 1 sampai 5.
+- Setelah perulangan selesai, program menampilkan jumlah keseluruhan, banyaknya data, dan nilai rata-rata.
 
 ### 4. Nilai Sentinel
 

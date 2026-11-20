@@ -21,7 +21,11 @@ Setelah menyelesaikan modul ini, mahasiswa mampu:
 
 ### 1. Konsep Switch Case
 
-Switch case adalah struktur untuk memilih satu kemungkinan dari beberapa nilai. Bayangkan tombol lantai pada lift: menekan tombol `3` membawa kita ke lantai 3, tombol `5` ke lantai 5, dan tombol lain tidak melakukan apa-apa.
+Python tidak memiliki pernyataan switch-case seperti beberapa bahasa pemrograman lainnya. Namun, mulai dari Python 3.10, kita dapat menggunakan pernyataan `match-case` untuk mencapai fungsionalitas yang serupa dengan switch-case. `match-case` adalah struktur untuk memilih satu kemungkinan dari beberapa nilai.
+
+match-case adalah cara yang lebih bersih dan lebih mudah dibaca untuk menangani banyak kondisi dibandingkan dengan menggunakan banyak pernyataan `if-elif-else`.  
+
+Bayangkan tombol lantai pada lift: menekan tombol `3` membawa kita ke lantai 3, tombol `5` ke lantai 5, dan tombol lain tidak melakukan apa-apa.
 
 Pada Python, struktur ini ditulis dengan `match-case`.
 
